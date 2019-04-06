@@ -9,6 +9,9 @@ dependencies {
   compile configurations.provided
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}
 repositories {
   mavenCentral()
 }
