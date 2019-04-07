@@ -1,8 +1,7 @@
-apply plugin: 'jetty'
-
 plugins {
   id "com.adarshr.test-logger" version "1.6.0"
 }
+apply plugin: 'jetty'
 
 configurations {
   provided
