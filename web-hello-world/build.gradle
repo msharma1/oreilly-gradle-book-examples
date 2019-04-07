@@ -18,5 +18,8 @@ repositories {
   jcenter()
 }
 test {
-    testLogging.showStandardStreams = true
+    reports {
+        junitXml.enabled = false
+        html.enabled = true
+    }               
 }
