@@ -1,5 +1,9 @@
 apply plugin: 'jetty'
 
+plugins {
+    id 'war'  
+}
+
 configurations {
   provided
 }
@@ -15,4 +19,5 @@ task wrapper(type: Wrapper) {
 }
 repositories {
   mavenCentral()
+  jcenter()
 }
