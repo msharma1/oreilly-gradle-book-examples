@@ -1,9 +1,5 @@
 apply plugin: 'jetty'
 
-plugins {
-    id 'war'  
-}
-
 configurations {
   provided
 }
