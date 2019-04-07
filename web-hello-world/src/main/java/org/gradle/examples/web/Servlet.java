@@ -1,11 +1,11 @@
 package org.gradle.examples.web;
+package junit;
 
 import java.io.PrintWriter;
 import java.io.IOException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-package junit;
  
 public class JUnitHelloWorld {
  
