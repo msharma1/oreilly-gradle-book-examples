@@ -5,6 +5,14 @@ import java.io.IOException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+package junit;
+ 
+public class JUnitHelloWorld {
+ 
+    public boolean isGreater(int num1, int num2){
+        return num1 > num2;
+    }
+}
 
 public class Servlet extends HttpServlet
 {
