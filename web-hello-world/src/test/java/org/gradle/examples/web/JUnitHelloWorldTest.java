@@ -1,6 +1,7 @@
 package junit;
  
 import static org.junit.Assert.assertTrue;
+import main.java.org.gradle.examples.web.JUnitHelloWorld;
  
 import org.junit.After;
 import org.junit.AfterClass;
