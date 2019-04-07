@@ -1,5 +1,4 @@
 package org.gradle.examples.web;
-package junit;
 
 import java.io.PrintWriter;
 import java.io.IOException;
