@@ -1,0 +1,26 @@
+apply plugin: 'jetty'
+apply plugin: 'war'
+
+configurations {
+  provided
+}
+
+dependencies {
+  provided 'javax.servlet:servlet-api:2.4'
+  compile configurations.provided
+  testCompile 'junit:junit:4.11'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}
+repositories {
+  mavenCentral()
+  jcenter()
+}
+test {
+    reports {
+        junitXml.enabled = false
+        html.enabled = true
+    }               
+}
