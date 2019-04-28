@@ -1,9 +1,9 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
  
-public class RunTest {
+public class HelloWorldTest {
   @Test
-  public void RunTest() {
+  public void HelloWorldTest() {
       HelloWorld h = new HelloWorld();
       String str = "World";
  
