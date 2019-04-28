@@ -1,5 +1,6 @@
 apply plugin: 'jetty'
 apply plugin: 'war'
+apply plugin:'base'
 
 configurations {
   provided
