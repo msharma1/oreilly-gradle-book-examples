@@ -10,6 +10,8 @@ dependencies {
   compile configurations.provided
   testCompile 'junit:junit:4.11'
 }
+reporting.baseDir = "my-reports"
+testResultsDirName = "$buildDir/my-test-results"
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.0'
@@ -23,4 +25,9 @@ test {
         junitXml.enabled = false
         html.enabled = true
     }               
+}
+task testReport(type: TestReport) {
+    destinationDir = file("$buildDir/reports/allTests")
+    // Include the results from the `test` task in all subprojects
+    reportOn subprojects*.test
 }
