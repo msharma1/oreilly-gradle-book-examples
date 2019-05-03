@@ -7,7 +7,6 @@ node('master') {
             archiveArtifacts artifacts: 'src/test/java/testreport.xml', fingerprint: true
             }
     }
-
     stage('ArchiveWar') {
         dir('/var/lib/jenkins/workspace/gradle_test_pipeline/web-hello-world') {
         sh './gradlew clean war'
